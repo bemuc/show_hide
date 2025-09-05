@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show and Hide Brands</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="brands-section">
+    <div class="brands-title">REPAIR OF THE BATTERY</div>
+    
+    <!-- Default visible brands -->
+    <div class="brands-grid">
+      <div class="brand"><img src="images/acer.png"><button>→</button></div>
+      <div class="brand"><img src="images/hp.png"><button>→</button></div>
+      <div class="brand"><img src="images/lenovo.png"><button>→</button></div>
+      <div class="brand"><img src="images/sony.png"><button>→</button></div>
+      <div class="brand"><img src="images/apple.png"><button>→</button></div>
+    </div>
+
+    <!-- Extra brands  -->
+    <div class="extra-brands">
+      <div class="brands-grid">
+        <div class="brand"><img src="images/acer.png"><button>→</button></div>
+      <div class="brand"><img src="images/hp.png"><button>→</button></div>
+      <div class="brand"><img src="images/lenovo.png"><button>→</button></div>
+      <div class="brand"><img src="images/sony.png"><button>→</button></div>
+        <div class="brand"><img src="images/apple.png"><button>→</button></div>
+      </div>
+    </div>
+
+    <!-- Toggle button -->
+    <button class="toggle-btn" onclick="toggleBrands()">Show all</button>
+  </div>
+
+  <script>
+    function toggleBrands() {
+      const extra = document.querySelector('.extra-brands');
+      const btn = document.querySelector('.toggle-btn');
+
+      if (extra.style.display === "none" || extra.style.display === "") {
+     
+        extra.style.display = "block";
+        btn.textContent = "Hide"; 
+      } else {
+        extra.style.display = "none";
+        btn.textContent = "Show all";
+      }
+    }
+  </script>
+</body>
+</html>

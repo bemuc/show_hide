@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+
+.brands-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    max-width: 700px;
+}
+
+.brands-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.brand img {
+    max-width: 70px;
+    max-height: 25px;
+    object-fit: contain;
+}
+
+.brand button {
+    border: 1px solid #ff4081;
+    border-radius: 50%;
+    background: none;
+    color: #ff4081;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.extra-brands {
+    display: none; 
+    margin-top: 15px;
+}
+
+
+.toggle-btn {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #00a082;
+    cursor: pointer;
+    font-size: 14px;
+}
