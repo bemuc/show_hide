@@ -1,70 +1,75 @@
-body {
+body{
     font-family: 'Roboto', sans-serif;
-    background: #f9f9f9;
-    padding: 20px;
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-
-.brands-section {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    background: #fff;
-    max-width: 700px;
+.extra-brands{
+    display: none; 
 }
 
-.brands-title {
-    font-weight: bold;
-    margin-bottom: 15px;
+.brands-section{
+     background-color: #F8F8F8;
+     padding-bottom: 30px;
 }
-
-
-.brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
-}
-
-.brand {
+.brands-title{
+    margin: 30px 0 30px 30px;
+    height: 56px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #eee;
-    padding: 8px 10px;
-    border-radius: 4px;
-    background: #fafafa;
-}
-
-.brand img {
-    max-width: 70px;
-    max-height: 25px;
-    object-fit: contain;
-}
-
-.brand button {
-    border: 1px solid #ff4081;
-    border-radius: 50%;
-    background: none;
-    color: #ff4081;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
+    line-height: 24px;
     font-size: 16px;
-    line-height: 26px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    
+
 }
 
+.brands-grid{
+    display: none;
+    padding: 30px 30px 0 30px ;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 
-.extra-brands {
-    display: none; 
-    margin-top: 15px;
 }
 
+.swiper,.mySwiper{
+    display: none;
+}
 
-.toggle-btn {
-    margin-top: 15px;
-    background: none;
+.brand{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white ;
+    width: auto;
+}
+
+.toggle-btn{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
     border: none;
-    color: #00a082;
-    cursor: pointer;
-    font-size: 14px;
+    background: none;
+    margin: 30px;
+}
+
+/* for mobile */
+@media (max-width:768px) {
+
+}
+    
+
+/* tablet view */
+ @media (min-width: 768px) and (max-width: 1120px) {
+    
+} 
+
+/* desktop view */
+@media (min-width: 1120px) {
+   
 }
