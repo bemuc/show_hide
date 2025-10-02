@@ -37,7 +37,7 @@ body{
 
 }
 
-.swiper,.mySwiper{
+.swiper{
     display: none;
 }
 
@@ -47,6 +47,7 @@ body{
     padding: 10px;
     background-color: white ;
     width: auto;
+    height: 72px
 }
 
 .toggle-btn{
@@ -60,16 +61,27 @@ body{
 
 /* for mobile */
 @media (max-width:768px) {
+    .brands-section{
+        display: none;
+    }
+    .swiper{
+        display: block;
+        /* padding: 30px 0 ; */
+    }
 
 }
     
 
 /* tablet view */
  @media (min-width: 768px) and (max-width: 1120px) {
+    .brands-grid{
+    display: none;
+    padding: 30px 30px 0 30px ;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    }
     
 } 
 
-/* desktop view */
-@media (min-width: 1120px) {
-   
-}
