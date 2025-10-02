@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'TT Lakes Neue';
+  src: url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff2') format('woff2'),
+       url('fonts/TT_Lakes/TT-Lakes-Neue-Regular.woff') format('woff'),
+       url('fonts/TT_Lakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TT Lakes Neue', sans-serif;
     margin: 30px;
     padding: 0;
     box-sizing: border-box;
@@ -51,7 +59,7 @@ body{
 }
 
 .toggle-btn{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TT Lakes Neue', sans-serif;
     display: flex;
     align-items: center;
     border: none;
