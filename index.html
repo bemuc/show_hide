@@ -3,80 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Show and Hide Brands</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .swiper {
-      width: 100%;
-      height: 100%;
-      background-color: #F8F8F8;
-      /* margin: 30px; */
-      /* padding: 30px; */
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* border: 1px solid red; */
-      margin: 30px;
-      padding: 30px;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 150px;
-      height: 45px;
-      /* object-fit: cover; */
-    }
-
-    .swiper-slide {
-      width: 60%;
-      /* padding-left: 20px; */
-    }
-
-    .swiper-slide:nth-child(2n) {
-      width: 40%;
-    }
-
-    .swiper-slide:nth-child(3n) {
-      width: 20%;
-    }
-  </style>
+  
 </head>
 <body>
+  <div class="brands-title">Repair of equipment from various brands</div>
   <div class="brands-section">
-    <div class="brands-title">Repair of equipment from various brands</div>
-    
-    <!-- Default visible brands -->
-      <div class="brands-grid">
-        <div class="brand"><img src="images/acer.svg"></div>
-        <div class="brand"><img src="images/hp.svg"></div>
-        <div class="brand"><img src="images/lenovo.svg"></div>
-        <div class="brand"><img src="images/sony.svg"></div>
-        <div class="brand"><img src="images/apple.svg"></div>
-        <div class="brand"><img src="images/samsung.svg"></div>
-        <div class="brand"><img src="images/bosch.svg"></div>
-        <div class="brand"><img src="images/viewsonic.svg"></div>
+      <div class="brands-grid" id="brandsGrid">
+        <!-- Default visible brands -->
+        <div class="brand"><img src="images/acer.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/hp.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/sony.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/apple.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/samsung.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/bosch.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand"><img src="images/viewsonic.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <!-- Extra brands to be toggled -->
+        <div class="brand hidden"><img src="images/acer.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/hp.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="brand hidden"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
       </div>
-
-    <!-- Extra brands  -->
-    <div class="extra-brands">
-      <div class="brands-grid">
-        <div class="brand"><img src="images/acer.svg"></div>
-        <div class="brand"><img src="images/hp.svg"></div>
-        <div class="brand"><img src="images/lenovo.svg"></div>
-      </div>
-    </div>
-
    
 
     <!-- Toggle button -->
-    <button class="toggle-btn" onclick="toggleBrands()"><img src="images/expand.svg" alt="expand logo"><span>Show all</span></button>
+    <button class="toggle-btn" id="toggleBtn"><img id="btnIcon"  src="images/expand.svg" alt="expand logo"><span>Show all</span></button>
   </div>
 
  
@@ -84,33 +40,37 @@
      <div class="swiper mySwiper">
       <div class="brands-title">Repair of equipment from various brands</div>
       <div class="swiper-wrapper ">
-        <div class="swiper-slide"><img src="images/acer.svg"></div>
-        <div class="swiper-slide"><img src="images/hp.svg"></div>
-        <div class="swiper-slide"><img src="images/lenovo.svg"></div>
-        <div class="swiper-slide"><img src="images/sony.svg"></div>
-        <div class="swiper-slide"><img src="images/apple.svg"></div>
-        <div class="swiper-slide"><img src="images/samsung.svg"></div>
-        <div class="swiper-slide"><img src="images/bosch.svg"></div>
-        <div class="swiper-slide"><img src="images/viewsonic.svg"></div>
+        <div class="swiper-slide"><img src="images/lenovo.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/hp.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/acer.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/sony.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/apple.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/samsung.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/bosch.svg"><img src="images/icon.svg" alt="icon arrow"></div>
+        <div class="swiper-slide"><img src="images/viewsonic.svg"><img src="images/icon.svg" alt="icon arrow"></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
 
 
   <script>
-    function toggleBrands() {
-      const extra = document.querySelector('.extra-brands');
-      const btn = document.querySelector('.toggle-btn');
-      const btnText = btn.querySelector("span");
+     const btn = document.getElementById('toggleBtn');
+    const hiddenItems = document.querySelectorAll('.hidden');
+    let shown = false;
 
-      if (extra.style.display === "none" || extra.style.display === "") {
-        extra.style.display = "block";
-        btnText.textContent = "Hide";
-      } else {
-        extra.style.display = "none";
-        btnText.textContent = "Show all";
-      }
-    }
+    btn.addEventListener('click', () => {
+      hiddenItems.forEach(item => {
+        item.classList.toggle('hidden');
+      });
+      shown = !shown;
+      if (shown) {
+    btnIcon.src = "showLess.png";
+    btn.innerHTML = `<img id="btnIcon" src="images/showLess.png" alt="Hide"> Hide`;
+  } else {
+    btnIcon.src = "expand.svg";
+    btn.innerHTML = `<img id="btnIcon" src="images/expand.svg" alt="Show"> Show more`;
+  }
+    });
   </script>
 
 
